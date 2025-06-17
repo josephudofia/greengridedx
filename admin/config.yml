@@ -1,5 +1,8 @@
+yaml
+
 backend:
-  name: git-gateway
+  name: github
+  repo: josephudofia/greengridex
   branch: main
 
 media_folder: "images/uploads"
@@ -13,4 +16,6 @@ collections:
         label: "Homepage"
         name: "homepage"
         fields:
+          - { label: "Title", name: "title", widget: "string" }
           - { label: "Page Content", name: "body", widget: "markdown" }
+
